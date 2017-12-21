@@ -1,0 +1,31 @@
+Thank you for taking the time to try Universal Game Editor.
+
+Universal Game Editor is a program designed to edit SAVED GAMES.  This
+shareware release comes with five pre-configured MODULES that can be used to
+edit four different games.  These games are Civilization, Betrayal at Krondor,
+Master of Orion (2 MODULES) and Lands of Lore.  This shareware release is
+fully functional, and is not crippled in any way.
+
+This program will allow you to change many aspects of your games.  Military
+unit strengths and weaknesses may be adjusted in wargames.  Character skills
+and attributes may be changed in role-playing games.  In fact, almost any
+game that allows you to save your game is a candidate for editing.
+
+Universal Game Editor requires an IBM-PC or compatible and 640K of RAM.  The
+program may run with less RAM but has only been tested with 640K.  The
+following files are distributed with this release:
+  UGE.EXE       Main program.
+  UGE.DOC       Program documentation, instructions, techniques, ordering info.
+  GAMEDAT.UGE   Holds information on which games are currently linked-in.
+  README.DOC    This file.
+  FILE_ID.DIZ   Holds a desription of this program for use with BBS systems.
+  CIV.MDL       MODULE for editing Civilization.
+  CIV.LST       Description and instructions for CIV.MDL.
+  KRONDOR.MDL   MODULE for editing Betrayal at Krondor.
+  KRONDOR.LST   Description and instructions for KRONDOR.MDL.
+  MOO-A.MDL     MODULE for editing Master of Orion (Planet data).
+  MOO-A.LST     Description and instructions for MOO-A.MDL.
+  MOO-B.MDL     MODULE for editing Master of Orion (Non-planet data).
+  MOO-B.LST     Description and instructions for MOO-B.MDL.
+  LANDS.MDL     MODULE for editing Lands of Lore.
+  LANDS.LST     Description and instructions for LANDS.MDL.

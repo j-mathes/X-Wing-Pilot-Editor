@@ -1,0 +1,1015 @@
+
+
+
+
+
+
+
+
+
+
+
+                            HARTMAN GAME UTILITIES
+
+                                   presents
+     
+                            Universal Game Editor
+
+
+
+                        Copyright 1993 by Jack Hartman
+
+
+
+
+
+
+
+
+                     For product support I can be reached at:
+                     CompuServe I.D.  70761,2761
+                     Prodigy I.D.  VJPH45A
+
+                               or
+
+                     HARTMAN GAME UTILITIES
+                     P. O. Box 73706
+                     Houston, Texas  77273-3706
+
+
+
+Copyright Notice and Disclaimer of Warranty
+-------------------------------------------
+  This product is licensed "as is" without any warranty, either express or
+implied, of merchantability or fitness for a particular purpose.  All
+warranties are expressly disclaimed.  By using this product, you agree that
+neither the copyright holder nor any related parties will be liable to you or
+any third party for any use of (or inability to use) this product, or for any
+damages arising from the use of this product.  (Some states do not allow the
+exclusion or limitation of incidental or consequential damage, so the
+preceeding limitation may not apply to you.)
+
+  You may not reverse-engineer, disassemble, modify, decompile or create
+derivative works of this product.  You acknowledge that this product contains
+confidential information and is the property of the copyright holder.
+
+  Universal Game Editor is copyright (c) 1993 by Jack Hartman, all rights
+reserved.
+
+
+Licensing Information
+---------------------
+  This product is being distributed as shareware.  This means that you are
+granted the right to evaluate this program without charge.  If you don't use
+this software, then don't pay for it.  If you do use it, please register your
+copy.  When you register you will receive:
+  ù The newest version of this program on disk
+  ù ALL modules in the Universal Game Editor library of modules
+  ù A key to remove shareware advertising
+  ù Written notice of future versions of this program
+  ù Free product support
+
+  You are encouraged to give copies of this program to your friends to
+evaluate, and to upload it to Electronic Bulletin Board Systems (BBS), so long
+as the following restrictions are observed:
+  1. This program must be distributed whole and unmodified.  Neither the       
+     program nor the documentation may be altered or renamed.
+  2. You may not charge a fee or remuneration, except for reasonable disk
+     duplication costs.
+  3. This program may not be distributed as part of another software package. 
+
+
+
+
+TABLE OF CONTENTS
+
+
+
+ 
+Overview. . . . . . . . . . . . . . . . . . . . . . .  1
+
+Installation. . . . . . . . . . . . . . . . . . . . .  2
+
+Getting Started . . . . . . . . . . . . . . . . . . .  2
+
+GAMES SCREEN. . . . . . . . . . . . . . . . . . . . .  3
+
+Adding Games or Modifying the List. . . . . . . . . .  3
+
+MODULE SCREEN . . . . . . . . . . . . . . . . . . . .  4
+
+TOOLS SCREEN. . . . . . . . . . . . . . . . . . . . .  6
+
+Tools Screen Display. . . . . . . . . . . . . . . . .  6
+
+Tools Help Window . . . . . . . . . . . . . . . . . .  7
+
+Cursor Keys Used in the TOOLS SCREEN. . . . . . . . .  7
+
+Find Text, Numeric or Group Value . . . . . . . . . .  7
+
+Make a VARIABLE . . . . . . . . . . . . . . . . . . .  8
+
+Display Width Adjustment. . . . . . . . . . . . . . .  9
+
+Split Screen. . . . . . . . . . . . . . . . . . . . . 10
+
+VARIABLE Clusters . . . . . . . . . . . . . . . . . . 11
+
+Go To OFFSET. . . . . . . . . . . . . . . . . . . . . 12
+
+Alter a Byte. . . . . . . . . . . . . . . . . . . . . 12
+
+Hints and Tips for Locating Game Data . . . . . . . . 13
+
+Appendix A  (Ordering Information and Order Form) . . 16
+Universal Game Editor                                                 Page  1
+
+
+Overview
+--------
+  Universal Game Editor is a program specifically designed for editing SAVED
+GAME files.  This allows the game player to change many aspects of almost any
+game.  Universal Game Editor requires an IBM-PC compatible computer with
+640KB of RAM.  (It will probably run in 512KB, but hasn't been tested).
+
+  When you save a game that you are playing, the computer stores all of
+the information about that game to a SAVED GAME file on disk.  That file will
+contain all of the information on your progress in the game so that when you
+restart the game you will begin right where you left off.  Universal Game
+Editor allows the game player easy access to the SAVED GAME file.  You may
+change many items in each game that you play.
+
+  The program uses MODULE files to hold information on SAVED GAME files to be
+edited.  These MODULES hold descriptions of items that may be changed in each
+game that is edited.  These items might include hit points, starship weapons,
+magic items, ability scores or anything else that you may want to change.
+Universal Game Editor comes with some MODULES already linked-in to the editor.
+Users may link-in other MODULE files to edit other games, or create their own
+MODULE files.  The editor may have up to 255 games in its supported games
+list.  Universal Game Editor makes it easy for the user to make modules for
+use with any game that allows you to save your game to a file.  Actually, ANY
+file may be edited with this program, whether or not it has anything to do
+with a game.  The possibilities are endless.
+
+  Universal Game Editor is distributed with modules to edit four games.
+Each module is accompanied by a text file with a description of the items
+that may be changed and known limits to some changes.
+  1. Civilization.  Allows changes to :
+     A. Difficulty level setting
+     B. Civilization names and leader names
+     C. Player's CIV number (player may play another CIV in the same game)
+     D. Amount of gold in treasury
+     E. City names and sizes
+     F. Vital statistics on all 28 military units (move, attack, etc.)
+       ... and more!
+  2. Betrayal at Krondor.  Allows changes to :
+     A. Money
+     B. Character names
+     C. Character ability scores and skills
+     D. Character health and stamina
+     E. Spellbooks
+     F. Character backpacks (you may create ANY item in the game)
+     G. Keys
+       ... and more!
+  3. Master of Orion (2 modules).  These two modules allow changes to :
+     A. Planet data (population, factories, bases, stargates, etc.)
+     B. Non-planet data (planetary reserve, science studies)
+     C. Ship data (weapons, engines, specials, hits, etc.)
+       ... and more!
+  4. Lands of Lore.  Allows changes to :
+     A. Character data (name, hit points, magic points, experience)
+     B. Backpacks (duplicate any item that you find)
+     C. Money
+       ... and more!
+Universal Game Editor                                                 Page  2
+
+
+Installation
+------------
+WARNING:  SAVE YOUR CURRENT GAME(S) BEFORE USING THIS PROGRAM!!!!
+          THIS PROGRAM CHANGES THE SAVED GAME FILE(S) FOR YOUR GAME(S).
+
+  Copy (or extract) all files in this archive to a subdirectory (C:\UGE or
+whatever).  The file UGE.EXE must be present for the program to work.  If
+other files are missing, you may not be able to use some or all of the
+pre-created modules.
+
+
+Getting Started
+---------------
+  To start the program, change to its subdirectory and type UGE.  The file
+GAMEDAT.UGE contains the information on which games may be edited, the name
+of the MODULE files used to edit those games, and the names and locations of
+the SAVED GAME files to be edited.  If the GAMEDAT.UGE file is missing, then
+the list of games that may be edited will be blank.  If you ADD a game to this
+blank list, then a GAMEDAT.UGE file will be created.  Note that ANY file may
+be edited, not just saved game files.
+
+  Universal Game Editor comes configured with five MODULES to edit four games.
+The games are Civilization, Betrayal at Krondor, Master of Orion (2 modules)
+and Lands of Lore.  The program originally assumes that all of these games
+are installed on your C: drive (hard drive).  It also assumes that each game
+was installed using the game's default installation directory.
+
+  If you wish to edit any of these games and the game was installed in the
+default directory on C: drive, then simply choose that game from the GAMES
+SCREEN list and hit <ENTER> to begin editing the saved game.  If the game
+was installed on a different drive or in a different directory, then you will
+get an error if you try to edit that game.  If that happens, simply choose
+"M)odify this list" from the GAMES SCREEN.  This will allow you to change the
+information for that game.  See the chapter called "Adding Games or Modifying
+the List" later in this document.
+
+NOTE:  Making changes to your SAVED GAMES will allow you to do things with
+   your games that the game designers never intended for you to do.  Some
+   games are delicate, and if you make large changes in your character's
+   statistics, it can bomb the game out.  Other games are more stable, but
+   even then some changes will bomb your game or cause unusual things to
+   happen when you are playing.  The point is, if you are editing a game,
+   start by making small changes.  If you have a first level character, make
+   him level 10 and play the game for a while.  If nothing bad happens, then
+   you can try making him higher and higher levels.  Your game will almost
+   certainly bomb out if you make your character level 30,000.  (But then
+   again, maybe not.  And a level 30,000 character should be undefeatable!).
+
+Universal Game Editor                                                 Page  3
+
+
+GAMES SCREEN
+------------
+  The first screen that the user will see (not counting shareware advertising)
+is the GAMES SCREEN.  At the top of the GAMES SCREEN is a title bar, with
+the program title, copyright info, version number and registration status.
+
+  The left half of the GAMES SCREEN displays a list of games which are
+supported by the current configuration of the program.  Games may be added to
+this list, deleted from this list or game information in the list may be
+modified.
+
+  The right half of the GAMES SCREEN is the Games Screen Help Window.  It gives
+a list of all of the choices available to the user from the GAMES SCREEN:
+  ù Use the cursor keys (PageUp, PageDown, up and down arrows, HOME and END)
+    to move the highlight bar to the game that you want to edit, delete or
+    modify.
+  ù Press <ENTER> to edit the game that is currently highlighted.  You will
+    be presented with the MODULE SCREEN.  See the section on MODULE SCREEN for
+    more information.
+  ù A)dd a game.  Hit "A" to add a game to the list.  See "Adding Games or
+    Modifying the List".
+  ù M)odify this list.  Hit "M" to modify the list entry that is currently
+    highlighted.  This will let you change the game name, MODULE file name and
+    saved game file name for this entry.  See "Adding Games or Modifying the
+    List".
+  ù <DELETE> an entry in this list.  This will remove the currently highlighted
+    entry from the list of supported games.  NOTE:  Deleting a game from this
+    list only removes its information from the list.  It will NOT delete any
+    files associated with that game, and it will NOT delete the MODULE file
+    for that game.
+  ù <CTRL-PageUp> and <CTRL-PageDown> to move an entry up or down in the list.
+    When the GAMES SCREEN is first displayed, the first game in the list is
+    highlighted.  If you are editing one game more often than others, you may
+    want to move its list entry up to the top of the list.  Put the highlight
+    bar on the list entry that you wish to move, then hold the CONTROL key down
+    and tap the UP ARROW key to move that entry up one position in the list, or
+    tap the DOWN ARROW key to move that entry down one line in the list.
+  ù Hit <ESCAPE> to exit Universal Game Editor and return to DOS (or whatever).
+
+
+Adding Games or Modifying the List
+----------------------------------
+  Each game that may be edited has three pieces of information that are stored
+in the GAMEDAT.UGE file.  This information is game name, MODULE file name and
+SAVED GAME file name.  If you are adding a game to the list or modifying an
+entry in the list, you will be asked for all three pieces of information.
+Universal Game Editor tries to guess the most likely answer to every question
+that it asks, and that answer will show up as the default answer whenever your
+response is required.  To accept the default answer, simply hit <ENTER>.
+If the default answer is not correct, then you may either type in new
+information or pick the correct answer from a list, depending on the
+information required.  Remember, hitting <ESC> at any time during the adding
+or modifying session will exit without making any changes.
+Universal Game Editor                                                 Page  4
+
+
+  The three pieces of information are :
+1. NAME OF THE GAME TO BE EDITED.  Hit <ENTER> to accept the name that is
+   displayed or type in a new name and hit <ENTER>.
+2. MODULE file name.  MODULE files are files that end with a .MDL extension
+   to the filename.  All files with a .MDL extension in the Universal Game
+   Editor directory will be shown in a list.  If game information is being
+   modified, then the MODULE file that is currently configured to go with
+   that game will be highlighted.  You may hit <ENTER> to accept this choice,
+   choose another MODULE, or choose *NEW FILE* to create a new MODULE file for
+   that game.  If you choose *NEW FILE*, you will be asked for a filename for
+   this MODULE.  You may accept the default MODULE filename or you may type in
+   a new MODULE filename.  If you type in a new filename, it may have up to 8
+   letters or numbers and a .MDL extension.  You do not need to add the
+   extension, it will be added for you.  The filename must conform to DOS rules
+   for filenames.  See your DOS manual for details.  If the name that you
+   enter does not conform to DOS rules, you will get an error message, and
+   you will be taken back to the GAMES SCREEN.
+3. SAVED GAME file name.  This operation will bring up a list of directories
+   and files.  If game information is being modified, and the SAVED GAME file
+   that was previously specified does exist, then the displayed directory
+   will be the directory containing the SAVED GAME file, and the SAVED GAME
+   file will be highlighted in the list.  If a game is being added to the list
+   then the displayed directory will be the root directory of the drive from
+   which Universal Game Editor was run.  Use the cursor keys to move the
+   highlight bar to the file name desired, and hit <ENTER> to choose it.
+   Hit "C" to change to a different drive.  The list may be sorted by file
+   name, filesize or time by hitting "N","S" or "T" respectively.  When sorted
+   by name the list is sorted alphabetically by filename.  When sorted by
+   filesize the list is sorted with the largest files listed first.  When
+   sorted by time the files are sorted with the newest files listed first.
+   Note that no matter how the list is sorted, directory entries will ALWAYS
+   be listed first.  Sorting only affects files, not directories.  The ".."
+   directory entry, if it exists, will always be at the top of the list,
+   regardless of how the list is sorted.  If the file you are looking for is
+   not in the displayed directory, you may change directories by moving the
+   highlight bar to the desired directory and hitting <ENTER>.  You may back
+   out of a directory by moving the highlight bar to the ".." directory entry
+   and hitting <ENTER>.  If you are already at the root directory, then the
+   ".." directory entry will not show up.
+
+
+MODULE SCREEN
+-------------
+  When you have chosen a game to edit, the program will display the MODULE
+SCREEN.  The MODULE SCREEN has three parts.
+
+  The left half of the screen is the Variable Window.  This window displays
+the VARIABLES that the MODULE contains, and their current value in the SAVED
+GAME file that is being edited.  A VARIABLE is something that has a variable
+value.  For instance, when you start a game you might not have any money
+(gold, dollars, megacredits or whatever).  But, as you play the game, you
+aquire money (or whatever).  So the value of your stash of money varies, or
+is VARIABLE.  The MODULE SCREEN allows easy access to the VARIABLES used in
+games.  The value of these VARIABLES may be changed with Universal Game
+Editor, and when you next play that game, you will have much more money (or
+whatever).
+Universal Game Editor                                                 Page  5
+
+
+  The upper right portion of the screen is the Editor Status Window.  This
+window displays information about the current MODULE and game being edited.
+The first line is the title of the window, EDITOR STATUS.  The second line
+shows the name of the game that is being edited.  The Editor Status Window
+also displays the following information:
+  SAVED GAME FILE - This is the name of the SAVED GAME file being edited.
+  MODULE NAME - This is the name of the MODULE file that is being used to hold
+      the VARIABLES that are used to edit the SAVED GAME file.
+  VARIABLE TYPE - This shows the TYPE of the currently highlighted VARIABLE.
+      There are two types of VARIABLES, text and numeric.  Text VARIABLES may
+      hold words or letters, such as player's name or city names.  Numeric
+      VARIABLES may only hold numbers, such as the amount of money the
+      player's character has or the number of hit points the player's
+      character has.
+  RANGE - This is the range of the currently highlighted VARIABLE.  This tells
+      you what kind of value is expected for this VARIABLE.  If the range is
+      "7 letters" then you may change the value for this VARIABLE to a word or
+      combination of letters up to seven letters long.  If the range is
+      "+/- 32,767" then you may enter a number from -32,767 (negative 32,767)
+      through 32,767.  Numbers may not contains decimal places, commas or any
+      non-numbers (except for the "-" minus sign for negative numbers).
+  OFFSET - This is the location in the SAVED GAME file where the currently
+      highlighted VARIABLE is located.
+  SHOWING LINE - This just tells which VARIABLE is being displayed and how
+      many VARIABLES are in this MODULE.  Each MODULE may contain up to
+      1000 VARIABLES.
+
+  The bottom right portion of the MODULE SCREEN is the Module Screen Help
+Window.  It gives a list of all of the choices available to the user from
+the MODULE SCREEN:
+  ù Use the cursor keys (PageUp, PageDown, up and down arrows, HOME and END)
+    to move the highlight bar to the VARIABLE that you want to edit, delete
+    or modify.
+  ù Press <ENTER> to change the value for the currently highlighted VARIABLE.
+    The value field in the Variable Window will be highlighted in red, and a
+    flashing cursor will be placed at the first position in the field.  Type
+    in a new value and hit <ENTER> to accept the new value, or <ESC> to exit
+    without making any changes.  If you do type in a new value, then the SAVED
+    GAME file is updated immediately with the new value.
+  ù M)odify this list.  Hit "M" to modify the list entry that is currently
+    highlighted.  This will let you change the VARIABLE name, OFFSET and
+    VARIABLE TYPE.  See "Making VARIABLES" later in this document.
+  ù T)ools.  This will take you to the TOOLS SCREEN.  This screen contains many
+    utilities for finding VARIABLES and creating custom MODULES.  See "TOOLS
+    SCREEN" for more information.
+  ù <DELETE> an entry in this list.  This will remove the currently highlighted
+    entry from the list of VARIABLES.  NOTE:  Deleting a VARIABLE from this
+    list only removes its information from the list.  It will NOT delete or
+    change any values in the SAVED GAME file.
+  ù <ALT-P> will output all of the parameters for all of the VARIABLES in the
+    current MODULE to a file.  The output file will have the same name as the
+    MODULE file, with a .LST extension instead of .MDL.  This file will be a
+    text file and may be read and edited with almost any word processor
+    program.  This file is a good place to keep notes about what values in
+    which VARIABLES have what effect in the game.
+  ù Hit <ESCAPE> to exit the MODULE SCREEN and return to the GAMES SCREEN.
+Universal Game Editor                                                 Page  6
+
+
+TOOLS SCREEN
+------------
+  The TOOLS SCREEN contains many utilities to directly access SAVED GAME
+files and to create and expand MODULE files.  If you already have a MODULE
+for the game that you are editing, and that MODULE allows access to everything
+you wish to change in your game, then you will not need to use this feature.
+This screen displays the contents of the SAVED GAME file that is currently
+being edited.  The contents are displayed as byte values and ASCII values.
+A byte value is a number from 0 through 255, and all information in any file
+on any disk is stored in byte values.  ASCII stands for American Standard Code
+for Information Interchange and simply determines which letter will be typed
+on the screen for each byte value.  There are a total of 256 byte values (0
+thru 255), and there are 256 ASCII codes.  Some ASCII codes do not make a
+printable character (PAGE EJECT, BACKSPACE, BELL, etc.), so they will be
+represented on the TOOLS SCREEN with a SPACE (spacebar).  The ASCII codes 65
+through 90 print the capital letters A-Z.  The ASCII codes 97 through 122
+print the small letters a-z.
+
+  The TOOLS SCREEN is only accessible from the MODULE SCREEN.  When you first
+enter the TOOLS SCREEN, the display will start at the OFFSET of the VARIABLE
+that was highlighted on the MODULE SCREEN when you typed "T" to get to the
+TOOLS SCREEN.  If no VARIABLES existed on the MODULE SCREEN, then the TOOLS
+SCREEN will start its display at OFFSET 0.
+
+  The top line of the TOOLS SCREEN tells, from left to right, (1) the name of
+the game whose SAVED GAME file is being displayed, (2) the OFFSET, or location
+in the SAVED GAME file where the cursor is currently located, (3) the size of
+the SAVED GAME file being displayed and (4) the current screen display width.
+
+Tools Screen Display
+--------------------
+  The middle portion of the TOOLS SCREEN is the Tools Screen Display.  This
+section displays the contents of the SAVED GAME file in byte values and ASCII
+values.  All files are just collections of bytes.  This section displays those
+bytes and allows you to easily search the SAVED GAME file for specific
+information.  It also allows you to display two files simultaneously, to
+compare those two files for differences, to instantly go to any OFFSET in the
+file, and much more.
+
+  The left edge of this display (with cyan background) shows the OFFSET that
+each line of bytes begins at.  The OFFSET is simply the location of the byte
+in the SAVED GAME file.  The first OFFSET in a file is OFFSET 0, and the last
+OFFSET will be one less than the filesize.  After the OFFSET number will be an
+arrow pointing to the right, at the line of byte values beginning at that
+OFFSET.
+
+  After each OFFSET, the byte values are displayed.  The byte values are
+displayed on a black background, except for the cursor, which has a magenta
+background.  The color of the byte values displayed gives information about
+those bytes.  Lightgray numbers mean that the byte values at that OFFSET have
+not been assigned to any VARIABLES.  Red numbers mean that those byte values
+have been assigned to a numeric-type VARIABLE, and yellow indicates a
+text-type VARIABLE.  Usually 12 byte values will be displayed on each line.
+So, if the cursor is on OFFSET 0 (the first OFFSET in the file), then the
+first line of the display will start at OFFSET 0, the second line will start
+Universal Game Editor                                                 Page  7
+
+
+at OFFSET 12, the third line at OFFSET 24, and so on.  At the far right of the
+Tools Screen Display is the ASCII value display.  This portion of the Tools
+Screen Display shows the ASCII values for the same bytes that are displayed on
+the left side of the screen.  Both the byte value display and the ASCII value
+display will have a cursor at the same OFFSET.
+
+  Between the byte value display and the ASCII value display is a vertical
+brown bar.  This bar is the position-in-file scrollbar.  This scrollbar
+indicates what portion of the SAVED GAME file is currently being displayed.
+The top of the scrollbar indicates the first byte in the file, and the bottom
+of the scrollbar indicates the last byte in the file.  The small diamond
+indicator shows what part of the file is being displayed.  So, if the diamond
+is near the top of the scrollbar, then the display is showing bytes from near
+the beginning of the SAVED GAME file.
+
+
+Tools Help Window
+-----------------
+  The bottom portion of the TOOLS SCREEN contains the Tools Help Window. This
+window gives a list of choices for the user.  In the bottom right corner of
+the Tools Help Window is a reminder of the color-coding for the Tools Screen
+Display.  Bytes belonging to text VARIABLES are displayed in yellow and bytes
+belonging to numeric VARIABLES are displayed in red.  A detailed description
+of the choices available to the user follows.
+
+
+Cursor Keys Used in the TOOLS SCREEN
+------------------------------------
+  Use the cursor keys (PageUp, PageDown, HOME, END, and the up, down, left and
+right arrows) to move the cursor around the Tools Screen Display.  If you try
+to move beyond the boundaries of the display, then the display will scroll.
+Two keys that are not listed in the Help Window are <CTRL-LeftArrow> and
+<CTRL-RightArrow>.  Hold the <CONTROL> key down and hit the <left arrow> key
+to move the cursor to the beginning of the current line or <right arrow> to
+move the cursor to the end of the current line.
+
+  Hitting <ESCAPE> will exit the TOOLS SCREEN and return to the MODULE SCREEN.
+The highlight bar will be on the VARIABLE that it was on when the TOOLS SCREEN
+was entered, unless new VARIABLES were created.  If new VARIABLES were
+created, the highlight bar will be on either the last single VARIABLE that was
+created, or the first VARIABLE of the last cluster of VARIABLES that was
+created.
+
+
+Find Text, Numeric or Group Value
+---------------------------------
+  This function will search the SAVED GAME file for specific data.  The search
+will always begin at the current cursor location.  So, if you want to begin a
+search from the start of a file, then make sure you hit <HOME> first to
+position the cursor at the top of the file.  The Tools Help Window will be
+replaced by another window where you will enter the paramaters for the search.
+
+  First, you must decide if the data to be found is text, numeric or group.
+If you want to find a word or name, then the search type would be text.  If
+you want to find a number, then the search type would be numeric.  If you are
+looking for a specific series of known bytes, then the search type would be
+group.
+Universal Game Editor                                                 Page  8
+
+
+  After you have specified the search type, you must enter the data to be
+searched for.  Text data such as names may contain any printable characters,
+and the search will be case insensitive (capital letters will be treated the
+same as small letters).  Numeric data may only contain positive whole numbers
+(no decimal places, no minus sign and no commas) in the range 0 through
+2,147,483,647.  Group data may contain up to 10 byte values.  Each byte value
+must be a positive whole number (no decimal places, no minus sign and no
+commas) in the range 0 through 255.  When doing a group type search, the
+program will search for the specified byte values in a group.  So, if you
+specify five byte values for a group type search, the program will search for
+those five values in a row.  When entering group data, you will be asked to
+enter the byte values to search for.  Type in a number from 0-255 and hit
+<ENTER> to confirm your choice.  You may enter up to 10 byte values to be
+searched for.  When you are finished entering byte values, hit <ENTER> on a
+blank field to begin the search.
+
+  If a match is found for your search data, then the search will stop, and the
+cursor will be positioned on the first byte of the match.  If the search type
+was text, then the cursor will be positioned on the first letter of the text
+that was search for.  If the search type was group, then the cursor will be
+positioned on the first byte of the group.  If the search type was numeric,
+then the cursor will be positioned on the first byte of the bytes that make up
+the number that was searched for.  If the number was in the range 0 through
+255 then only one byte value is needed to represent that number.  If the number
+was in the range 256 through 65,535 then two byte values are used to represent
+that number.  If the number is larger than 65,535 then four byte values are
+used to represent that number.
+
+  Once a search has been started, it can be halted by hitting any key.  Once
+a search has been specified, it can be repeated by hitting "F" for F)ind,
+and choosing "R)epeat last search".  This search will begin from the current
+cursor position with the same parameters as last specified.
+
+
+Make a VARIABLE
+---------------
+  This command will allow you to create a single VARIABLE, which will be added
+to the current MODULE.  A VARIABLE is anything with a variable value.  For
+instance, when you start playing a certain game, the turn number is 1, or the
+first turn.  After you have played the game for a while, the turn number might
+be 90.  Universal Game Editor makes it easy for the game player to find the
+location in the SAVED GAME file where the information for game turn is
+stored.  Once this data is located, a VARIABLE is created to mark the spot in
+the SAVED GAME file.  From then on, the game player has easy access to the
+turn number VARIABLE.  So, if the game is scheduled to end on turn 100,
+then the game player could save the game, exit, and run Universal Game Editor.
+Pick the game to be edited from the list of supported games on the GAMES
+SCREEN, then pick the turn number VARIABLE from the MODULE SCREEN.  The turn
+number may then be set to any number desired.
+
+  To make a VARIABLE, the location of the changeable data must be located in
+the SAVED GAME file.  See the section "Hints and Tips for Locating Game Data"
+later in this document.
+Universal Game Editor                                                 Page  9
+
+
+  Once the data is located in the SAVED GAME file, the cursor should be moved
+onto the first byte of the data.  Then, hitting "M" will begin the VARIABLE
+creation.  The Tools Screen Help Window will be replaced with another window.
+Then you will enter the parameters for the new VARIABLE.
+
+  First, you will be asked for a name or description for this VARIABLE.  Type
+in a name or description up to 20 keystrokes long.  The name should indicate
+what this VARIABLE is designed to change, such as "Turn number".
+
+  Next, you must enter the starting OFFSET of this new VARIABLE.  Universal
+Game Editor assumes that the current cursor location is the starting OFFSET.
+If the displayed OFFSET number is correct, simply hit <ENTER> to confirm it.
+If the displayed OFFSET is not the starting OFFSET of the new VARIABLE, then
+you may enter the correct OFFSET and hit <ENTER> to confirm it.  The OFFSET
+number that you enter may be a number from 0 through one less than the
+filesize.
+
+  Lastly, you will be asked for the VARIABLE TYPE.  You will be presented with
+a list of VARIABLE TYPES.  Choose from this list.  Use the cursor keys to move
+the highlight bar to the VARIABLE TYPE that you wish to assign to your new
+VARIABLE, and hit <ENTER> to choose it.  In the case of our new turn number
+VARIABLE, we would probably choose a two-byte VARIABLE with a range of from
+0-65,535.  If we were absolutely sure that the turn number could never get
+above 255, then we could make turn number a one-byte VARIABLE with a range of
+from 0-255.  There are 25 VARIABLE TYPES.  There are 20 text types, with word
+sizes ranging from 1 to 20 letters.  And there are 5 numeric types.  The
+numeric types contain either 1, 2 or 4 bytes, and allow ranges of from
+-2,147,483,648 through 2,147,483,647.
+
+  Once a VARIABLE has been created, it will be added to the current MODULE
+file.  The value for that VARIABLE may then be easily changed from the MODULE
+SCREEN.  You will notice that certain bytes in the Tools Screen Display will
+turn either yellow for text VARIABLE TYPE or red for numeric VARIABLE TYPE.
+
+  Hitting <ESCAPE> at any time before the VARIABLE creation process is
+complete will exit the "M)ake a VARIABLE" option and return you to the TOOLS
+SCREEN.
+
+
+Display Width Adjustment
+------------------------
+  This function will change the number of bytes on each line.  The display
+width may be from 2 through 255 bytes wide.  The display can show a maximum of
+12 bytes on each line.  If the new display width is larger than 12, an
+indicator will show up at the right hand border of the byte value display and
+at the right hand border of the ASCII value display to show that the screen
+display is not showing all of the bytes on that line.  Each line will begin at
+an OFFSET that is the OFFSET of the previous line plus the screen width.  This
+feature is useful for getting blocks of data in a save file to line up on the
+display.
+Universal Game Editor                                                 Page 10
+
+
+Split Screen
+------------
+  This feature lets you view the contents of two files simultaneously.  The
+Tools Screen Help Window will disappear, to be replaced by two windows.  The
+new window on the right displays a list of files in the same directory as the
+SAVED GAME file.  Universal Game Editor tries to guess which file you will be
+wanting to look at.  If any files in the directory are the same size as the
+SAVED GAME file then the newest of those files will be highlighted.  This list
+of files may be sorted by N)ame, S)ize or T)ime.  Sorting by name sorts the
+list alphabetically by filename.  Sorting by size sorts the list with the
+largest files at the top.  Sorting by time sorts the list with the files with
+the newest date at the top.
+NOTE:  No matter how the list is sorted, directory entries will ALWAYS be
+listed first.  Sorting only affects files, not directories.  The ".."
+directory entry, if it exists, will always be at the top of the list,
+regardless of how the list is sorted.
+
+  If the file you are looking for is not in the displayed directory, you may
+change directories by moving the highlight bar to the desired directory and
+hitting <ENTER>.  You may back out of a directory by moving the highlight bar
+to the ".." directory entry and hitting <ENTER>.  If you are already at the
+root directory, then the ".." directory entry will not show up.  Hit <ENTER>
+to choose the currently highlighted file.
+
+  The new window on the left is the Split Screen Help Window.  It reminds you
+of your options.  Remember, if you hit <ESCAPE> before choosing a file for
+the Split Screen, then you will exit the Split Screen feature without
+splitting the screen.
+
+  When you choose a second file to view, the Tools Screen Display splits into
+two halves.  The top half of the Tools Screen Display will show the SAVED GAME
+file, and the bottom half will show the file that you chose to view.  Between
+the two halves will be an information line that will show the name of the file
+in the bottom half of the screen.  The cursor will be present in both displays
+at the same OFFSET.  Only the top half (the SAVED GAME file) may be A)ltered,
+and F)ind will only look at the SAVED GAME file.  Also, if the new file is
+smaller than the SAVED GAME file, then the filesize indicator will be changed
+to be equal to the size of the smaller file.  This means that if the second
+file is smaller than the SAVED GAME file, you may not view the portion of the
+SAVED GAME file past the end of the second file.
+
+  When the Tools Screen Display is split, two new commands are available.
+Choosing "U)nsplit" will cause the program to display only one file again.
+Choosing "C)ompare files" will begin a byte-by-byte comparison of the two
+files, beginning at the current cursor position.  If a difference is found,
+the program will stop its comparison and put the cursor on the OFFSET where
+the bytes differ.  Hitting "C" again will begin comparing again from the
+current cursor position.  Hitting any key while a comparison is being
+performed will stop the process.
+Universal Game Editor                                                 Page 11
+
+
+VARIABLE Clusters
+-----------------
+  Hitting the <INSERT> key will allow you to create a cluster of from 2
+through 255 related VARIABLES, which will be added to the current MODULE
+file.  See the section titled "Make A VARIABLE" for more information.
+
+  A VARIABLE Cluster is simply a related group (or cluster) of VARIABLES. For
+instance, you may be playing a role-playing game that allows you to control
+six characters at one time.  You may want to make a MODULE that allows you to
+edit each of your character's stats (character name, strength, dexterity,
+etc.).  You could make each VARIABLE individually with the "M)ake a VARIABLE"
+option.  You might make a VARIABLE to hold the first character's name.  You
+could call this VARIABLE "Character 1 name".  The VARIABLE for the second
+character's name would be called "Character 2 name", and so on through six
+characters.  Then you would repeat the process for each of the other VARIABLES
+(Character 1 strength, Character 1 dexterity, etc.).
+
+  Or, you could make six related VARIABLES at once with the cluster feature.
+Once you have located the OFFSETS of the data that you want to make VARIABLES
+for, make a note of the OFFSET of the second VARIABLE (in this case it would
+be "Character 2 name").  Then, move the cursor to the OFFSET of the first
+VARIABLE.  Then hit <INSERT> to access the cluster feature.
+
+  Like the "M)ake a VARIABLE" option, you will be asked to enter the
+parameters for your new VARIABLES.  The cluster feature will ask for two
+additional parameters, for a total of five parameters.  If we wanted to make
+a cluster of VARIABLES to hold the names of all six of our characters, we
+would enter the following parameters:
+ 1. Quantity of VARIABLES to add.  How many related VARIABLES are in this
+    cluster.  You may add from 2 through 255 VARIABLES in one cluster.  In
+    our case, we would enter 6 for the quantity.  If this is not the first
+    cluster that is created in this session, then Universal Game Editor will
+    remember how many VARIABLES were added in the last cluster and that number
+    will be the default answer for this parameter.
+ 2. Name or description.  This parameter has a new option when accessed from
+    the cluster feature.  Since we are adding several VARIABLES to our MODULE
+    with one command, we may now number each VARIABLE name.  If we type a
+    "#" (pound sign or number sign) into the name or description parameter,
+    then the "#" will be replaced by a "1" for the first VARIABLE name, a "2"
+    for the second VARIABLE name, and so on.  So, we would type "Character #
+    name".  When the VARIABLES are created, the "#" will be replaced in each
+    VARIABLE by a number.  If we put "##" in a VARIABLE name, then the second
+    "#" will be replaced by a number.  So, if we typed "Character ## name",
+    the first VARIABLE name would be "Character #1 name", and so on.  If
+    you add 10 or more VARIABLES in one cluster, then the numbering feature
+    will pad the numbers with leading zeros where required.
+ 3. OFFSET of the first VARIABLE in this cluster.  Universal Game Editor
+    assumes that the current cursor location is the starting OFFSET.  If the
+    displayed OFFSET number is correct, simply hit <ENTER> to confirm it.  If
+    the displayed OFFSET is not the starting OFFSET of the first new VARIABLE,
+    then you may enter the correct OFFSET and hit <ENTER> to confirm it.  The
+    OFFSET number that you enter may be a number from 0 through one less than
+    the filesize.
+Universal Game Editor                                                 Page 12
+
+
+ 4. OFFSET of the second VARIABLE in this cluster.  If this is the first
+    cluster that is being created in this session, Universal Game Editor will
+    assume that the second OFFSET is the next OFFSET after the first.  If one
+    or more clusters have already been created in this TOOLS SCREEN session,
+    then Universal Game Editor will remember those parameters, and will try
+    to guess the OFFSET of the second VARIABLE.  If the displayed OFFSET number
+    is correct, simply hit <ENTER> to confirm it.  If the displayed OFFSET is
+    not the starting OFFSET of the second VARIABLE, then you may enter the
+    correct OFFSET and hit <ENTER> to confirm it.  The OFFSET number that you
+    enter may be a number from 0 through one less than the filesize, and must
+    be larger than the OFFSET of the first VARIABLE.
+ 5. VARIABLE TYPE.  See the section "Make a VARIABLE" for more information on
+    the different VARIABLE TYPES.  Choose a VARIABLE TYPE from the list.  In
+    our case, we would choose a text VARIABLE TYPE from the list for the
+    character names.  If we knew that the character names could be up to 12
+    letters long, we would choose a text type VARIABLE of 12 letters.
+
+  After you have entered all of the parameters, your new VARIABLES are created
+and added to the MODULE.  After the new VARIABLES are added, they are stored
+in the MODULE file exactly like any other VARIABLE.  The cluster feature is
+an easy way to add several VARIABLES at once.
+
+
+Go To OFFSET
+------------
+  This feature will let you instantly move the cursor to any OFFSET.  Hit
+the "G" key to activate this function.  The Tools Screen Help Window will
+be replaced by a window where you will specify the OFFSET to jump to.  The
+OFFSET must be a positive whole number (no decimal, minus sign or commas)
+from 0 through the last OFFSET in the file.  The last OFFSET in the file will
+be one less than the filesize.
+
+
+Alter a Byte
+------------
+  Choosing this option will let you change the byte value at the current
+cursor location.  You will be asked to enter a number from 0-255.  Enter
+a number and hit <ENTER> to confirm, or hit <ESCAPE> to quit without altering
+the byte.  The new value will be written to the SAVED GAME file as soon as
+you confirm it.
+NOTE:  In split screen mode, only the byte in the SAVED GAME file (top half
+       of the screen) will be changed.
+Universal Game Editor                                                 Page 13
+
+
+Hints and Tips for Locating Game Data
+-------------------------------------
+  This section details tricks and techniques that can make creating and
+using MODULES as easy as possible.
+
+  Before adding a game to the list of supported games, you must have a
+SAVED GAME file for that game.  You should run the game program and either
+start a new game or load a previously SAVED GAME.  At the first opportunity,
+save your game.  Some games allow for several SAVED GAMES to be active at
+one time.  Save your game into the slot that you will want to edit.  Then
+exit the game and run Universal Game Editor.  From the GAMES SCREEN, choose
+"A)dd a game".  Enter the game name and specify the MODULE file to link-in.
+Next, Universal Game Editor will ask you to specify the SAVED GAME file.  Use
+the cursor keys to move the highlight bar to the name of the directory where
+your game is located.  Hit <ENTER> to display the contents of that directory.
+Hit <HOME> to make sure that the highlight bar is positioned on the ".."
+directory entry.  Then hit "T" to sort the list by time.  The list will be
+sorted with the ".." directory entry first, followed by any subdirectories,
+followed by the filenames sorted by the date of the file (timestamp).  Since
+you just created a SAVED GAME file moments ago, this file should be at the
+top of the sorted filenames.  If no file looks like it is the correct file,
+then maybe your game writes its SAVED GAME files into a subdirectory.  Look
+for your SAVED GAME file there.
+
+  If you are about to make a new MODULE or expand on an existing MODULE, you
+should make some preparations.  First, run your game program and start a new
+game.  If the game allows you to control several characters at once (or ships,
+countries, planets, or whatever), then you should fill all available
+positions.  When giving your characters names, make a note of the maximum
+number of letters allowed in the character names.  Using pencil and paper,
+write down all of the statistics for all of your characters (or whatever),
+including name, ability scores, money, etc.  Save your game and exit the game
+program.
+
+  Then, run Universal Game Editor.  If you haven't already done so, add your
+game to the list of supported games.  Choose your game from the list and hit
+<ENTER> to begin editing.  You will be presented with the MODULE SCREEN.  If
+are creating a new MODULE, then the Variables Window will be blank.  To create
+new VARIABLES, you must enter the TOOLS SCREEN (choose "T)ools").
+
+  Hit <HOME> to position the cursor to the beginning of the SAVED GAME file.
+Then choose "F)ind", and specify that you will be searching for T)ext.  Type
+in the name of the first character in your game.  Don't worry about capital
+letters, all letters are treated as capitals.  The program will begin its
+search, and will stop when it has located a match.  If no match is found, then
+make sure that you have spelled the name correctly.  If no match is found
+again, then the name is not stored in the file that you have designated as the
+SAVED GAME file, or it is stored in an unusual manner.  Some games may store
+data in more than one file.  When you are adding a game to the list, and you
+sort the filename list to look for the newest file, make a note of how many
+files have the same time and date as the newest file.  It is possible that
+game data is stored in more than one file.  If this is the case, you may make
+separate MODULES for each SAVED GAME file.
+Universal Game Editor                                                 Page 14
+
+
+  When you have found where the name of your first character is stored, then
+you should search for the name of your second character.  When you have found
+the OFFSET where the name of your second character is stored, make a note of
+the OFFSET.  Move the cursor back to the first letter in the name of your
+first character.  Then hit <INSERT> to create a cluster of VARIABLES.  When
+asked for the quantity of VARIABLES to add, enter the number of characters
+(or whatever) that you have named.  Next, enter the name of this VARIABLE,
+something like "Character # name" or "Char ## - Name" or whatever.  Then
+you will be asked for the OFFSET of the first and second VARIABLES.  Lastly,
+you will be asked to specify the VARIABLE TYPE.  Choose a text type VARIABLE
+with enough letters to hold the longest allowable character name, but no more
+than that.
+
+  After the first cluster has been created, Universal Game Editor will
+remember the number of VARIABLES in the cluster, and the number of bytes
+between the first and second VARIABLES.  When you create another cluster,
+Universal Game Editor will assume that you want to make the same number of
+VARIABLES in this cluster.  It will also calculate the OFFSET of the second
+VARIABLE based on the previous cluster.  This information is forgotten when
+you go back to the GAMES SCREEN.
+
+  If there are other VARIABLES to be created, then there are several ways to
+try to locate the OFFSET of the data in the SAVED GAME file.  Move the cursor
+to the first byte of the first VARIABLE of the first character on the Tools
+Screen Display, and make a note of how many bytes are between the first and
+second character names.  An easy way to do this is to subtract the OFFSET
+number for the name of the first character from the OFFSET number for the name
+of the second character.  Choose the option "D)isplay width adjustment" and
+enter the number that you calculated as the new display width.  If you
+calulated it correctly, the names of all of your characters will be lined up
+on the left side of the Tools Screen Display.  Move the cursor to the right
+and look for a number to match one of the statistics that you are looking for.
+If you find a number that looks like it could be the data that you are looking
+for, look at the bytes directly under your data.  These bytes should represent
+the same data for each of your characters.  If the bytes below your data do
+not match up with the statistics for your characters, then it is likely that
+the data is not what you are looking for.  Continue moving the cursor to the
+right, looking for matches in the statistics that you have written down from
+your characters.  When you find data that you are sure represents the
+statistics that you are searching for, use the cluster feature to create new
+VARIABLES to hold that data.  In some games, statistics are stored in bytes
+before the character names.  Also, SAVED GAME data could be stored in several
+different files.  The point is, some data may be hard to find.
+
+  Another technique for locating data uses the "F)ind a value" feature.  If
+you want to make a VARIABLE for the amount of money that your party has in
+your game, then make a note of the party's total money before you save the
+game.  Then run Universal Game Editor and pick your game from the list.  Go to
+the TOOLS SCREEN and hit <HOME> to go to the top of the SAVED GAME file.
+Hit "F" and search for a numeric type value, and type in the amount of money
+Universal Game Editor                                                 Page 15
+
+
+as the search data.  If a match is found, the cursor will be positioned at the
+match.  You may make a VARIABLE right then at that OFFSET, maybe called
+"Money???".  The VARIABLE TYPE would be numeric, and in most cases would be
+a four-byte numeric value.  Then you can hit "F" (for Find) and then "R"
+(for Repeat last search) and the program will search for more matches for your
+data.  If more matches are found, then you should make more VARIABLES called
+"Money???".  When no more matches are found, then exit Universal Game Editor
+and run your game program.  Play the game until you have aquired more money.
+Save your game and run Universal Game Editor.  Choose your game form the list
+and go to the MODULE SCREEN.  Look at all of the "Money???" VARIABLES that you
+created, and see if any of them now have a value equal to the amount of money
+that you had when you saved the game this time.  If only one "Money???"
+VARIABLE now has the correct value, then it can be safely assumed that this is
+the correct VARIABLE.  Move the highlight bar to the correct "Money???"
+VARIABLE and hit "M" to modify this entry.  Change the name to "Money" or
+"Party gold" or "Resource points" or whatever is descriptive.  Leave all other
+information as it is (just hit enter to accept the default value that is
+displayed).  After you have found the correct VARIABLE for party money, delete
+the incorrect "Money???" VARIABLES by highlighting their entries in the list
+and hitting the <DELETE> key.  Note that when using the "F)ind a value"
+feature to locate a numeric value, it is best to search for a number larger
+than 255.  Since a single byte can hold a number from 0-255, many matches may
+be found for numbers in that range.  A number between 256-65535 requires two
+bytes, so the search would have to find two bytes in a row to match your
+search data.  A number larger than 65,535 requires four bytes, and would be
+the least likely to get multiple matches.
+
+  Another technique makes it easier to find data such as backpack items, items
+carried, starship weapons, and similar data.  Start your game program and look
+at your first character's backpack (or starship weapons or items carried or
+whatever).  Remove all items from that character's backpack.  Then save your
+game in a different file than the one that you will be editing.  Then,
+immediately put one item into the first location in your first character's
+backpack.  Quickly save the game into the file that you have specified as
+the SAVED GAME file.  Exit the game, run Universal Game Editor and pick your
+game to edit.  Go to the TOOLS SCREEN and choose to "S)plit screen".  In most
+cases, the game file where you made your first save will be the same size as
+your SAVED GAME file.  If this is true, when you are asked to choose a file to
+display in the bottom half of the split screen, the highlight bar will already
+be on that file.  So you can hit <ENTER> to accept that choice or choose
+another file.  In this situation, Universal Game Editor will usually correctly
+guess which file you want to choose.  After you have confirmed your choice,
+the Tools Screen Display will be split.  The top half of the screen will
+display the SAVED GAME file, and the bottom half will display the file that
+you just specified.  Hit <HOME> to position the cursor at the top of the
+file(s).  Then hit "C" to begin a comparison of the two files starting at the
+current cursor location.  When a difference in the two files is found, the
+search will stop and the cursor will be positioned at the OFFSET where the
+two files differ.  This might be the first backpack location for your first
+character.  You may create a VARIABLE at the current cursor location and call
+it something like "Char 1 Backpack 1".  Then hit "C" to begin searching again
+from the current cursor position.  If no more differences are found then you
+can be fairly sure that you have found the backpack area of your character(s).
+You may repeat this technique to find the last backpack position, and maybe
+knowing the first and last backpack position will let you infer where all of
+the backpack positions are.
+
+Universal Game Editor                         APPENDIX A              Page 16
+
+
+Please register your copy of Universal Game Editor.
+Send a check or money order for $35 in US dollars drawn on a US bank to:
+
+            HARTMAN GAME UTILITIES
+            P. O. Box 73706
+            Houston, TX.  77273-3706
+
+
+
+                                  ORDER FORM
+
+  +---------------------------------------------------------------------+
+  |                                         Item   Quantity   Total     |
+  +---------------------------------------------------------------------+
+  |                                                                     |
+  |         Universal Game Editor   ($35.00 each)  ________   _________ |
+  |                                                                     |
+  |                 Texas residents add sales tax    7.25%    _________ |
+  |                                                                     |
+  |   Shipping FREE in US.  Foreign orders add $4             _________ |
+  |                                                                     |
+  |                               Amount enclosed             _________ |
+  |                                                                     |
+  +---------------------------------------------------------------------+
+  | Please specify disk size      (  ) 5.25"      (  ) 3.5"             |
+  |                                                                     |
+  | If you do not specify disk size, you will get 5.25".                |
+  | All disks are high density.                                         |
+  | The disk will contain the latest version of this program, all       |
+  | MODULES in the UGE library, and a key file to block out shareware   |
+  | advertising.  Registration entitles you to free product support     |
+  | and notice by mail of future versions of Universal Game Editor.     |
+  +---------------------------------------------------------------------+
+  |   Please fill in the address where you want to receive your disk    |
+  |                                                                     |
+  |                                                                     |
+  |    Name:  ____________________________________________________      |
+  |                                                                     |
+  | Address:  ____________________________________________________      |
+  |                                                                     |
+  |           ____________________________________________________      |
+  |                                                                     |
+  |                                                                     |
+  |                                                                     |
+  |                                                                     |
+  |  Where did you hear about Universal Game Editor?                    |
+  |                                                                     |
+  |    ___________________________________________________________      |
+  |                                                                     |
+  |    ___________________________________________________________      |
+  |                                                                     |
+  +---------------------------------------------------------------------+
+                          Thank you for your order
+

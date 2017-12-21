@@ -1,0 +1,150 @@
+X-WING PILOT FILE EDITOR (PFE) v2.1
+###################################
+
+
+Contents
+~~~~~~~~
+
+Legal Stuff
+Contacting The Programmer
+What Is PFE?
+Using PFE
+    Starting PFE
+    Editing Your Pilot File
+    PFE Key Summary
+    Exiting PFE
+    Notes
+Known Bugs
+Revision History
+
+
+Legal Stuff
+~~~~~~~~~~~
+
+"PFE v2.1" is (C) Andrew Blanchard, October 1993
+"X-Wing" & "Imperial Pursuit" (C) LucasArts Entertainment Company, 1993
+
+
+Contacting The Programmer
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Comments, bug reports, donations and job offers may be sent to:
+
+    Andrew Blanchard
+    24 Town Green Lane
+    Aughton
+    Ormskirk
+    Lancashire
+    England
+    L39 6SF
+
+There is no fixed registration fee attached to PFE, how much you send is
+entirely up to you.  However, anyone sending œ10 or more will be sent
+the next release of PFE free of charge, so don't forget to send details
+of your address and required disk size.  In addition I will consider the
+first 10 reports of a bug as a œ10 donation and the same for suggestions
+that get implemented in a subsequent release of PFE.
+
+
+What Is PFE?
+~~~~~~~~~~~~
+
+PFE is an editor for saved pilot files for the LucasArts game "X-Wing",
+and also supports the "Imperial Pursuit" mission disk.  At a basic level
+it allows the user to edit any aspect of a pilot's performance log as
+required.  However it is intended to allow users to skip any difficult
+missions and make up for deficiencies in X-Wing program, namely ships
+captured are not recorded, nor are the destruction of mines/probes: I
+killed it, so I want it in my log!!!
+
+Also included is a pilot file called IPTOPACE.PLT.  This is an enhanced
+version of the TOPACE.PLT file included in "Imperial Pursuit" that adds
+the "Imperial Pursuit" missions to those completed.
+
+
+Using PFE
+~~~~~~~~~
+
+Using PFE should be simple, however, just in case...
+
+Starting PFE
+    PFE accepts the FULL name of a pilot file on the command line, ie:
+    "PFE iptopace.plt" or will prompt for one if it is not given.  Both
+    options can be used with a path if required, although I recommend 
+    placing PFE in your X-Wing directory to dispense with this.
+
+Editing Your Pilot File
+    Assuming no errors occurred in opening the pilot file you will now
+    see the PFE editing screen with a flashing cursor by the "Status"
+    entry.  You may now use the keys listed in the following section to
+    make any required changes to your file.  Remember that if you make
+    a mistake you can simply correct it or abandon your changes.
+
+PFE Key Summary
+    Cursor keys:    Move the cursor  ;^)
+    F1 - F4:        Switch editing screen
+    F5:             Exit with option to discard changes
+    +/-:            Increment / decrement value
+    Numeric keys:   Input new numeric value directly (see Note #1)
+    Page Up / Down: Change tour being edited
+
+Exiting PFE
+    To exit PFE press the "F5" key.  You will now be asked whether to
+    save your work (press "S"), abandon it (press "A") or continue your
+    editing (press any other key)
+
+Notes
+    *   Numeric keys cannot be used to change the last maze level that
+        was completed, use the +/- keys instead.
+    *   Some values cannot exceed 65,535.  If you enter a value greater
+        than this is will be rounded down.
+    *   In the interests of screen design I have put an arbitrary limit
+        of 999,999 onto mission scores which is sufficient to display
+        all *realistic* scores: I scored over 100,000 points for one
+        mission.
+    *   the Tour IV & Tour V medals are only displayed if you installed
+        a mission disk.
+    *   For simplicity I chose to display 24 missions for each tour, the 
+        actual number of missions per tour are as follows:
+            Tour I:     12
+            Tour II:    12
+            Tour III:   14
+            Tour IV:    20
+        However on tour IV (Imperial Pursuit) there are four missions
+        where you are given a choice of missions.  Since X-Wing will
+        ignore extra scores and takes the first score of a optional
+        mission I was not overly concerned about this.
+
+
+Known Bugs
+~~~~~~~~~~
+
+NONE!  But if you can find one let me know: I'll treat the first 10
+genuine reports of a bug as a œ10 registration (see above) and will send
+you the latest (fixed) version of PFE as soon as it is finished.  Bug
+reports may be sent to the address given in the Registration section of
+this document.
+
+
+Revision History
+~~~~~~~~~~~~~~~~
+
+1.0     Clunky multi-choice menu based effort to get the job done.  Not
+        released as Shareware
+
+2.0     *MAJOR* re-write, new features include:
+            Totally new look
+            Considerable amount of error checking code added
+            Final bytes of Pilot file deciphered correctly (I hope)
+            A few bugs fixed            
+        The first shareware release
+
+2.1     FINALLY got around to using Turbo Profiler:
+            Approx 10% speed up on screen redraws
+            Tidied up and optimized the code
+        Documentation re-write, (the old version got zapped, oops)
+        A few spelling errors and minor bugs removed
+        Added support to save & restore user's screen mode (I hope)
+        Added support for the "Imperial Pursuit" mission disk.
+
+2.2     Support for B-Wing mission disk: coming soon!!!

@@ -1,0 +1,67 @@
+X-Wing : B-Wing Missions
+
+B-Wing Mission Disk for X-Wing
+------------------------------
+
+On the Historic Mission 6,in which you fly the B-Wing,in the Death 
+Star trench run.  There are regular blasts of big lasers.  When they 
+happen duck into the trench and keep on doing this.  Also if you 
+miss, when you shoot the proton torps.  You have to quit the mission 
+and play it again.  You can't just go round for another pass.  Even 
+if you hit, it will not say "NICE SHOT!!".
+
+
+B-Wing a Load of Hacks
+----------------------
+
+1.Hacks
+=======
+Here is a load of hacks for B-Wing but make sure that you have the 
+original disks handy, just in case anything goes drastically wrong.
+   
+First, back up bflight.ovl to bflight.old. Open the file bflight.ovl 
+using a hex editor such as PC Tools. For unlimited missiles on all 
+fighters go to address 132A0. Find the sequence: FE 8F 13 01 and 
+change it to: 90 90 90 90.  This is useful when you have lots of 
+corvettes and frigates to destroy.
+
+The hacks to increase the strength of your shields are different for
+each fighter. Find the following sequences and change them to: 
+
+98 3A 98 3A 04 00 34 08
+
+FIGHTER         ADDRESS                 SEQUENCE
+X-Wing          2C370                   C4 09 C4 09 04 00 34 08
+Y-Wing          2C450                   A6 0E A6 0E 04 00 68 10
+A-Wing          2C530                   C4 09 C4 09 04 00 DC 05
+B-Wing          2D250                   88 13 88 13 04 00 9C 18
+
+When you're playing, the shields will take some time to charge. 
+Obviously you want to charge both shields and lasers to maximum. 
+Divert power from the laser to the shield to speed things up. This 
+will slow the fighter down but you can increase speed and 
+acceleration by changing the following sequence to: F4 01 63 
+
+FIGHTER         ADDRESS                 SEQUENCE
+X-Wing          2C380                   E1 00 0C
+Y-Wing          2C480                   B4 00 08
+A-Wing          2C540                   0E 01 10
+B-Wing          2D260                   CD 00 0C
+
+Save the changes and exit. Copy bflight.ovl (the newly changed one) 
+to bflight.cht. If you want the play the original, unhacked version 
+copy bflight.old to bflight.ovl. If you want to play the cheat copy 
+then copy bflight.ovl. If you're still hopeless even with a 
+super-charged B-Wing then this final hack will slow the Imperial 
+forces down to a snail's pace. Open the hacked bflight.cht and change 
+the following sequences to: 19 00 0A. That should help some.
+
+FIGHTER         ADDRESS                 SEQUENCE
+TIE/F           2C620                   E1 00 FF
+TIE/I           2C700                   FA 00 10        
+TIE/B           2C7E0                   B4 00 0A       
+TIE/A           2D180                   45 01 00
+ASS GUN         C8C0                    C8 00 0C
+
+*Well that's IT!*
+

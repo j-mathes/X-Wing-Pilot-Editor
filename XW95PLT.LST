@@ -1,0 +1,102 @@
+Report for XW95
+Created by Universal Game Editor
+
+Num.  Variable name            OFFSET  VAR.TYPE         RANGE
+===========================================================================
+   1  TOD Score (Total)             4  4 bytes     +/- 2,147,483,648
+   2  Skill Rating                  8  2 bytes       0 thru 65,535  
+   3  ====================        159  1 byte         0 thru 255    
+   4  X-W Hist. 1 Score           160  4 bytes     +/- 2,147,483,648
+   5  X-W Hist. 2 Score           164  4 bytes     +/- 2,147,483,648
+   6  X-W Hist. 3 Score           168  4 bytes     +/- 2,147,483,648
+   7  X-W Hist. 4 Score           172  4 bytes     +/- 2,147,483,648
+   8  X-W Hist. 5 Score           176  4 bytes     +/- 2,147,483,648
+   9  X-W Hist. 6 Score           180  4 bytes     +/- 2,147,483,648
+  10  Y-W Hist. 1 Score           224  4 bytes     +/- 2,147,483,648
+  11  Y-W Hist. 2 Score           228  4 bytes     +/- 2,147,483,648
+  12  Y-W Hist. 3 Score           232  4 bytes     +/- 2,147,483,648
+  13  Y-W Hist. 4 Score           236  4 bytes     +/- 2,147,483,648
+  14  Y-W Hist. 5 Score           240  4 bytes     +/- 2,147,483,648
+  15  Y-W Hist. 6 Score           244  4 bytes     +/- 2,147,483,648
+  16  A-W Hist. 1 Score           288  4 bytes     +/- 2,147,483,648
+  17  A-W Hist. 2 Score           292  4 bytes     +/- 2,147,483,648
+  18  A-W Hist. 3 Score           296  4 bytes     +/- 2,147,483,648
+  19  A-W Hist. 4 Score           300  4 bytes     +/- 2,147,483,648
+  20  A-W Hist. 5 Score           304  4 bytes     +/- 2,147,483,648
+  21  A-W Hist. 6 Score           308  4 bytes     +/- 2,147,483,648
+  22  B-W Hist. 1 Score           352  4 bytes     +/- 2,147,483,648
+  23  B-W Hist. 2 Score           356  4 bytes     +/- 2,147,483,648
+  24  B-W Hist. 3 Score           360  4 bytes     +/- 2,147,483,648
+  25  B-W Hist. 4 Score           364  4 bytes     +/- 2,147,483,648
+  26  B-W Hist. 5 Score           368  4 bytes     +/- 2,147,483,648
+  27  B-W Hist. 6 Score           372  4 bytes     +/- 2,147,483,648
+  28  ====================        733  1 byte         0 thru 255    
+  29  TOD 1 Status (1=actv        735  1 byte         0 thru 255    
+  30  TOD 1 Missns Complte        751  1 byte         0 thru 255    
+  31  TOD 1 M1 Score              759  4 bytes     +/- 2,147,483,648
+  32  TOD 1 M2 Score              763  4 bytes     +/- 2,147,483,648
+  33  TOD 1 M3 Score              767  4 bytes     +/- 2,147,483,648
+  34  TOD 1 M4 Score              771  4 bytes     +/- 2,147,483,648
+  35  TOD 1 M5 Score              775  4 bytes     +/- 2,147,483,648
+  36  TOD 1 M6 Score              779  4 bytes     +/- 2,147,483,648
+  37  TOD 1 M7 Score              783  4 bytes     +/- 2,147,483,648
+  38  TOD 1 M8 Score              787  4 bytes     +/- 2,147,483,648
+  39  ====================       1582  1 byte           +/- 127     
+  40  Suface Kills               1587  2 bytes       0 thru 65,535  
+  41  X-W Kills                  1589  2 bytes       0 thru 65,535  
+  42  Y-W Kills                  1591  2 bytes       0 thru 65,535  
+  43  A-W Kills                  1593  2 bytes       0 thru 65,535  
+  44  T/F Kills                  1595  2 bytes       0 thru 65,535  
+  45  T/I Kills                  1597  2 bytes       0 thru 65,535  
+  46  T/B Kills                  1599  2 bytes       0 thru 65,535  
+  47  GUN Kills                  1601  2 bytes       0 thru 65,535  
+  48  TRN Kills                  1603  2 bytes       0 thru 65,535  
+  49  SHU Kills                  1605  2 bytes       0 thru 65,535  
+  50  TUG Kills                  1607  2 bytes       0 thru 65,535  
+  51  CNA Kills                  1609  2 bytes       0 thru 65,535  
+  52  FRT Kills                  1611  2 bytes       0 thru 65,535  
+  53  CAL Kills                  1613  2 bytes       0 thru 65,535  
+  54  FRG Kills                  1615  2 bytes       0 thru 65,535  
+  55  CRV Kills                  1617  2 bytes       0 thru 65,535  
+  56  STD Kills                  1619  2 bytes       0 thru 65,535  
+  57  T/A Kills                  1621  2 bytes       0 thru 65,535  
+  58  B-W/Mine Kills             1623  2 bytes       0 thru 65,535  
+  59  Mine Kills                 1625  2 bytes       0 thru 65,535  
+  60  More Mine Kills            1627  2 bytes       0 thru 65,535  
+  61  More Mine Kills            1629  2 bytes       0 thru 65,535  
+  62  SAT Kills                  1631  2 bytes       0 thru 65,535  
+  63  More SAT Kills             1633  2 bytes       0 thru 65,535  
+  64  Probe Kills                1635  2 bytes       0 thru 65,535  
+  65  ===================        1636  1 byte         0 thru 255    
+  66  X-W Captures               1637  2 bytes       0 thru 65,535  
+  67  Y-W Captures               1639  2 bytes       0 thru 65,535  
+  68  A-W Captures               1641  2 bytes       0 thru 65,535  
+  69  T/F Captures               1643  2 bytes       0 thru 65,535  
+  70  T/I Captures               1645  2 bytes       0 thru 65,535  
+  71  T/B Captures               1647  2 bytes       0 thru 65,535  
+  72  GUN Captures               1649  2 bytes       0 thru 65,535  
+  73  TRN Captures               1651  2 bytes       0 thru 65,535  
+  74  SHU Captures               1653  2 bytes       0 thru 65,535  
+  75  TUG Captures               1655  2 bytes       0 thru 65,535  
+  76  CNA Captures               1657  2 bytes       0 thru 65,535  
+  77  FRT Captures               1659  2 bytes       0 thru 65,535  
+  78  CAL Captures               1661  2 bytes       0 thru 65,535  
+  79  FRG Captures               1663  2 bytes       0 thru 65,535  
+  80  CRV Captures               1665  2 bytes       0 thru 65,535  
+  81  STD Captures               1667  2 bytes       0 thru 65,535  
+  82  T/A Captures               1669  2 bytes       0 thru 65,535  
+  83  B-W/Mine Captures          1671  2 bytes       0 thru 65,535  
+  84  Mine Captures              1673  2 bytes       0 thru 65,535  
+  85  More Mine Captures         1675  2 bytes       0 thru 65,535  
+  86  More Mine Captures         1677  2 bytes       0 thru 65,535  
+  87  SAT Captures               1679  2 bytes       0 thru 65,535  
+  88  More SAT Captures          1681  2 bytes       0 thru 65,535  
+  89  Probe Captures             1683  2 bytes       0 thru 65,535  
+  90  ===================        1684  1 byte         0 thru 255    
+  91  Lasers Fired               1685  4 bytes     +/- 2,147,483,648
+  92  Laser Hits (craft)         1689  4 bytes     +/- 2,147,483,648
+  93  Laser Hits (surface)       1693  4 bytes     +/- 2,147,483,648
+  94  Warhead Fired              1697  2 bytes       0 thru 65,535  
+  95  Warhead Hits (space)       1699  2 bytes       0 thru 65,535  
+  96  Warhead Hits (surfac       1701  2 bytes       0 thru 65,535  
+  97  Craft Lost                 1703  2 bytes       0 thru 65,535  

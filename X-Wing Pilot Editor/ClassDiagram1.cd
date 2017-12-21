@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="X_Wing_Pilot_Editor.Pilot">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAIAQBAAEAABAAAAAAAQAAAAgAAAAAAAAAAAAAAAAIQ=</HashCode>
+      <FileName>Pilot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="X_Wing_Pilot_Editor.TODOperationScore">
+    <Position X="2.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAQAAAAAAAAAAAQAAAAAAAIAAAA=</HashCode>
+      <FileName>TODOperationScore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="X_Wing_Pilot_Editor.TODStats">
+    <Position X="5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAACAAIBAAAAAAAAACAAAgAAAAAQACAQAAEAACAA=</HashCode>
+      <FileName>TODStats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="X_Wing_Pilot_Editor.TODVictoriesCaptures">
+    <Position X="2.5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>TODVictoriesCaptures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="X_Wing_Pilot_Editor.TrainingRecord">
+    <Position X="7.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAACAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TrainingRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="X_Wing_Pilot_Editor.HistoricCombatRecord">
+    <Position X="5" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAgAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>HistoricCombatRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
