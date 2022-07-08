@@ -6,7 +6,7 @@ X-Wing Pilot Editor v1.2 2015-08-28
 //---------------------------------
 Contacting the programmer:
 
-Please send all comments or bug reports to retrotek@shaw.ca
+Please send all comments or bug reports to https://github.com/j-mathes/X-Wing-Pilot-Editor
 
 //---------------------------------
 Introduction
